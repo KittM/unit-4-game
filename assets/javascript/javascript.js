@@ -39,6 +39,60 @@ $(document).ready(function(){
 
      
 
+     
+//create  four event listeners for crystal buttons
+
+     
+     $('.roseQuarts').on('click', function () {
+          playerScore = playerScore + roseQuarts;
+          console.log("Post roseQ click = " + playerScore);
+          $('#totalScore').text(playerScore);
+          //conditions
+          if (playerScore == random) {
+               confetti();
+          }
+          else if (playerScore > random) {
+               bummer();
+          }
+     })
+     $('.amethyst').on('click', function () {
+          playerScore = playerScore + amethyst;
+          console.log("Post amethyst click = " + playerScore);
+          $('#totalScore').text(playerScore);
+          //conditions
+          if (playerScore == random) {
+               confetti();
+          }
+          else if (playerScore > random) {
+               bummer();
+          }
+     })
+     $('.citrine').on('click', function () {
+          playerScore = playerScore + citrine;
+          console.log("Post citrine click = " + playerScore);
+          $('#totalScore').text(playerScore);
+          //conditions
+          if (playerScore == random) {
+               confetti();
+          }
+          else if (playerScore > random) {
+               bummer();
+          }
+     })
+     $('.selenite').on('click', function () {
+          playerScore = playerScore + selenite;
+          console.log("Post citrine click = " + playerScore);
+          $('#totalScore').text(playerScore);
+          //conditions
+          if (playerScore == random) {
+               confetti();
+          }
+          else if (playerScore > random) {
+               bummer();
+          }
+     })
+
+
 
 // add score to players total - hide players total score until end of game
 
