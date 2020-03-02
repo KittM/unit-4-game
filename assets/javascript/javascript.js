@@ -38,7 +38,20 @@ $(document).ready(function(){
 
 
      
-
+//display wins
+     function confetti() { 
+          alert("You've Been Healed!");
+          wins++;
+          $('#wins').text(wins);
+          reset();
+     }
+//display Losses
+     function bummer() {
+          alert("Breathe; Try Again!");
+          losses++;
+          $('#losses').text(losses);
+          reset();
+     }
      
 //create  four event listeners for crystal buttons
 
