@@ -1,4 +1,4 @@
-$(document).ready(function)(){
+$(document).ready(function(){
 
      //display random number
 
@@ -26,13 +26,19 @@ $(document).ready(function)(){
      function reset() {
           random = Math.floor(Math.random() * 102 * 19);
           console.log(random)
-          $('matchScore').text(random)
+          $('matchScore').text(random);
+          roseQuarts = Math.floor(Math.random() * 12 + 1);
+          amethyst = Math.floor(Math.random() * 12 + 1);
+          citrine = Math.floor(Math.random() * 12 + 1);
+          selenite = Math.floor(Math.random() * 12 + 1);
+          playerScore = 0;
+          $('#totalScore').text(playerScore);
 }
 
-//create  four event listeners for crystal buttons
 
 
-//display random number
+     
+
 
 // add score to players total - hide players total score until end of game
 
