@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
-     //display random number
+//display random number
 
-     var random = Math.floor(Math.random() * 102 + 19)
-     console.log(random);
-
-     $('matchScore').text(random);
+     var match = Math.floor(Math.random() * 102 + 19);
+     console.log(match)
 
 ///counter variables
      var playerScore = 0;
@@ -18,15 +16,15 @@ $(document).ready(function(){
      var selenite = Math.floor(Math.random() * 12 + 1)
      
 
-
+     $('#matchScore').text(match);
      $('#wins').text(wins);
      $('#losses').text(wins);
 
-/// Rest Game function
+/// Reset Game function
      function reset() {
-          random = Math.floor(Math.random() * 102 * 19);
-          console.log(random)
-          $('matchScore').text(random);
+          match = Math.floor(Math.random() * 102 * 19);
+          console.log(match);
+          $('#matchScore').text(match);
           roseQuarts = Math.floor(Math.random() * 12 + 1);
           amethyst = Math.floor(Math.random() * 12 + 1);
           citrine = Math.floor(Math.random() * 12 + 1);
@@ -47,7 +45,7 @@ $(document).ready(function(){
      }
 //display Losses
      function bummer() {
-          alert("Breathe; Try Again!");
+          alert("Breathe, Try Again!");
           losses++;
           $('#losses').text(losses);
           reset();
@@ -61,10 +59,10 @@ $(document).ready(function(){
           console.log("Post roseQ click = " + playerScore);
           $('#totalScore').text(playerScore);
           //conditions
-          if (playerScore == random) {
+          if (playerScore == match) {
                confetti();
           }
-          else if (playerScore > random) {
+          else if (playerScore > match) {
                bummer();
           }
      })
@@ -73,10 +71,10 @@ $(document).ready(function(){
           console.log("Post amethyst click = " + playerScore);
           $('#totalScore').text(playerScore);
           //conditions
-          if (playerScore == random) {
+          if (playerScore == match) {
                confetti();
           }
-          else if (playerScore > random) {
+          else if (playerScore > match) {
                bummer();
           }
      })
@@ -85,10 +83,10 @@ $(document).ready(function(){
           console.log("Post citrine click = " + playerScore);
           $('#totalScore').text(playerScore);
           //conditions
-          if (playerScore == random) {
+          if (playerScore == match) {
                confetti();
           }
-          else if (playerScore > random) {
+          else if (playerScore > match) {
                bummer();
           }
      })
@@ -97,10 +95,10 @@ $(document).ready(function(){
           console.log("Post citrine click = " + playerScore);
           $('#totalScore').text(playerScore);
           //conditions
-          if (playerScore == random) {
+          if (playerScore == match) {
                confetti();
           }
-          else if (playerScore > random) {
+          else if (playerScore > match) {
                bummer();
           }
      })
