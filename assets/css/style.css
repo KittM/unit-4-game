@@ -1,3 +1,7 @@
-header-img {
+.jumbotron {
+     background-color: none;
+}
+
+.header-img {
      background-image: url("images/crystal_collector_banner.jpg");
 }
