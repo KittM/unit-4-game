@@ -5,3 +5,30 @@
 .header-img {
      background-image: url("images/crystal_collector_banner.jpg");
 }
+
+.instructions {
+     text-align: center;
+}
+
+p {
+     text-align: left;
+}
+
+.spacer {
+     height: 20px;
+}
+
+img {
+     padding: 0px;
+     border: 0px;
+}
+
+img-thumnail.amethyst {
+     padding: none;
+     border:none;
+}
+
+.img-thumnail {
+     padding: 10px;
+     border: 0px;
+}
