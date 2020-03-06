@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //display random number
 
-     var match = Math.floor(Math.random() * 102 + 19);
+     var match = Math.floor(Math.random() * 100 + 2);
      console.log(match)
 
 ///counter variables
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 /// Reset Game function
      function reset() {
-          match = Math.floor(Math.random() * 102 * 19);
+          match = Math.floor(Math.random() * 100 * 2);
           console.log(match);
           $('#matchScore').text(match);
           roseQuarts = Math.floor(Math.random() * 12 + 1);
